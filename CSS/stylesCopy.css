@@ -1,0 +1,106 @@
+body {
+    font-family: 'Macondo', cursive;
+    background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
+    /*
+    background-size: 100% 100%;
+    position: relative;
+    border: none;
+    box-sizing:border-box;
+    background-size:cover; */
+    /* background-size:contain; */
+    background-repeat:no-repeat;
+    /* background-position: center center; */
+    margin: 0;
+    padding: 0;
+    color: white;
+
+    background-size: cover;
+    /* height: 8vh; */
+    height: 100%;
+    background-position: center center;
+    border-radius: 0px!important;
+
+}
+
+
+
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    color: rgb(210, 198, 35);
+}
+
+header h2 {
+    color: #d7d715;
+}
+
+.site-footer {
+    background-image: linear-gradient(#000000, rgb(76, 75, 71));
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    /* background-image: linear-gradient(to right, #ffcc67, #ffcd06, #e1800a); */
+    color: white;
+    background-image: url("../images/wallpaperflare.com_wallpaper1.jpg");
+    background-size: 100% 100%;
+    /* height: 100vh; */
+    /* background-position: center; */
+    /* border-radius: 0px!important; */
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px
+
+}
+
+.navbar {
+    background-color: #58575f85;
+    color: rgb(154, 150, 143)!important;
+    margin-top: px;
+    /* margin-top: 0px; */
+    padding-top: 0px;
+}
+
+
+.navbar-nav .nav-link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px;
+    transition: all;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color:#37353d85;
+}
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(158, 86, 4, 0.5)
+}
+
+.carousel {
+    border: solid #a17109;
+}
+
+.card {
+    background-color: rgba(245, 245, 245, 0.4)
+}
