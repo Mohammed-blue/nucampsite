@@ -208,30 +208,30 @@ hr {
     padding: 20px 0;
 }
 
-/* container */
+/* container imgs*/
 .col .media img {
     background: linear-gradient(270deg,#e03694 -24.77%,#f47253 95.41%);
 }
 
+#fitnessImg {
+        float: left;
+        width:  450px;
+        height: 450px;
+        object-fit: cover;
+    }
+
 /* Advice tab-cards */
 
-.wrapper .card-img{
+#row-wrapper .card-img{
     height: 100%;
 }
 
 #card-title {
     color:#e03694;
+    font-weight: bold;
 }
 
 #card-text {
-    color: #f47253
+    color: #f47253;
 }
 
-#wrapper {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: space-around;
-    gap: 7rem 1rem; /* row-gap column gap */
-    justify-content: center;
-    padding: 0;
-}
