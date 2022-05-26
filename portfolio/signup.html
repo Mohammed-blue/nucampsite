@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- A navigation bar for aiding users with navigating through the web page -->
-    <nav role="navigation" class="navbar navbar-expand-md navbar-light sticky-top navbar-2">
+    <nav role="navigation" class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="container">
             <!--  add an img of the logo -->
             <a href="index.html" class="navbar-brand"><img src="img/HygieiaFirness_logo.PNG" width="100" height="80" alt="HygieiaFitness"></a>
@@ -33,7 +33,7 @@
                     <li class="nav-item"> <a href="index.html" class="nav-link">Home</a> </li>
                     <div class="dropdown">
                         <button style="padding: 0;" class="nav-link w-nav-link dropdown-toggle" style="max-width: 1200px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <li class="nav-item "><a class="nav-link "   href="#">Advice</a></li>
+                            <li class="nav-item "><a class="nav-link " href="#">Advice</a></li>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="fitness.html">Fitness</a>
@@ -47,78 +47,97 @@
                     <li class="nav-item"><a class="nav-link " href="shop.html">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="business.html">Business</a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                    <li class="nav-item"><a  class="nav-link" href="signup.html">SIGN-UP</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="signup.html">SIGN-UP</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <hr>
-    <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Back & Arm Remix</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/backArmsRemix.PNG" alt="Breadcrumb Trail thumbnail">
-                    <div class="media-body align-self-center">
-                        <h3>Target Areas: <span style="color: lightgrey;">Arms</span></h3>
-                        <h3>Equipment: <span style="color: lightgrey;">mat, dumbbells</span></h3>
-                        <p class="d-none d-sm-block">We are back at it — pun intended. Let's sculpt lines in the upper body to show off your best you.</p>
+
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                <div class=" shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                    <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                    <form>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+
+                                <div class="form-outline">
+                                    <input type="text" id="firstName" class="form-control form-control-lg" />
+                                    <label class="form-label" for="firstName">First Name</label>
+                                </div>
+
+                            </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-outline">
+                                        <input type="text" id="lastName" class="form-control form-control-lg" />
+                                        <label class="form-label" for="lastName">Last Name</label>
+                                    </div>
+
+                                </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                                <div class="form-outline datepicker w-100">
+                                    <input type="text" class="form-control form-control-lg" id="birthdayDate" />
+                                    <label for="birthdayDate" class="form-label">Birthday</label>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 mb-4">
+
+                                <h6 class="mb-2 pb-1">Gender: </h6>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                    value="option1" checked />
+                                    <label class="form-check-label" for="femaleGender">Female</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                    value="option2" />
+                                    <label class="form-check-label" for="maleGender">Male</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                                    value="option3" />
+                                    <label class="form-check-label" for="otherGender">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                    <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                                    <label class="form-label" for="emailAddress">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                    <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                    <label class="form-label" for="phoneNumber">Phone Number</label>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="mt-4 pt-2">
+                                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                            </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2 class="text-sm-right">Super Dumbbell Strength</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <div class="media-body align-self-center">
-                        <h4>Target Areas: <span style="color: lightgrey;">Total Body</span></h4>
-                        <h4>Equipment: <span style="color: lightgrey;">mat, dumbbells</span></h4>
-                        <p class="d-none d-sm-block">Upper body. Lower body. Total body! Grab two dumbbells and power through strength training intervals with Gideon. While the pace may be slower, the sweat will still fall.</p>
-                    </div>
-                    <img class="d-flex mr-3 img-thumbnail" src="img/superDumbbellStrength.PNG" alt="Breadcrumb Trail thumbnail">
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Blazing Guns</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/blazingGuns.PNG" alt="Breadcrumb Trail thumbnail">
-                    <div class="media-body align-self-center">
-                        <h3>Target Areas: <span style="color: lightgrey;">Arms</span></h3>
-                        <h3>Equipment: <span style="color: lightgrey;">mat, dumbbells</span></h3>
-                        <p class="d-none d-sm-block">Your guns will be blazing in this completely arm-focused dumbbell workout. Ready, aim, fire.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2 class="text-sm-right">Upper Body Box & Burn</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <div class="media-body align-self-center">
-                        <h4>Target Areas: <span style="color: lightgrey;">Arms</span></h4>
-                        <h4>Equipment: <span style="color: lightgrey;">mat, dumbbells (optional)</span></h4>
-                        <p class="d-none d-sm-block">Mix up upper body strength exercises with fun and fast paced boxing cardio moves. You’ll switch from strength moves such as lateral raises into powerful boxing combos such as front punches to get your cardio kick. Get fit, strong, have fun and unleash your inner beast with this workout.</p>
-                    </div>
-                    <img class="d-flex mr-3 img-thumbnail" src="img/upperBodyAndBurn.PNG" alt="Breadcrumb Trail thumbnail">
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
+    </section>
 
     <footer class="site-footer">
         <div class="container">

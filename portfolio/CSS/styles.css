@@ -57,7 +57,7 @@ button {
 
 
 .center-button-block .btn {
-    margin-left: 40%;
+    /* margin-left: 40%; */
 
     font-size: 18px;
     min-height: 60px;
@@ -105,7 +105,7 @@ hr {
 /* headers */
 .center-button-block h4 {
     margin-top: 5px;
-    margin-left: 40%;
+    /* margin-left: 40%; */
     padding: 0 auto;
     color:gray
 }
@@ -113,24 +113,20 @@ hr {
 /* wrapper */
 #backgroundImg {
     background-image: url("../img/background-img.PNG");
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 
 }
 
-/* cards Styling */
-.wrapper {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    gap: 7rem 15rem; /* row-gap column gap */
-    justify-content: center;
-}
+#shopImg {
+    background: linear-gradient(270deg,#e03694 -24.77%,#f47253 95.41%);
+    ;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 
-.wrapper > * {
-    margin: 0 1rem 2rem;
 }
 
 .card{
@@ -220,12 +216,12 @@ hr {
         object-fit: cover;
     }
 
-/* need help with this img why is not coveing the whole jumbotron */
-.big-banner {
+/* jumbotron */
+.big-banner{
     background-image: url('../img/bestWorkOurApp.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    /* position: relative; */
+    background-color: none;
 }
 
 /* Advice tab-cards */
@@ -243,12 +239,47 @@ hr {
     color: #f47253;
 }
 
-#hybrid {
-
-}
 
 .gradient-font-4 {
     background: -webkit-linear-gradient(0deg,#36cce0,#f47253 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* Signup styling */
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #a1c4fd;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+    }
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+
+/* login styling */
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
 }

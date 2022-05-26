@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- A navigation bar for aiding users with navigating through the web page -->
-    <nav role="navigation" class="navbar navbar-expand-md navbar-light sticky-top navbar-2">
+    <nav role="navigation" class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="container">
             <!--  add an img of the logo -->
             <a href="index.html" class="navbar-brand"><img src="img/HygieiaFirness_logo.PNG" width="100" height="80" alt="HygieiaFitness"></a>
@@ -33,7 +33,7 @@
                     <li class="nav-item"> <a href="index.html" class="nav-link">Home</a> </li>
                     <div class="dropdown">
                         <button style="padding: 0;" class="nav-link w-nav-link dropdown-toggle" style="max-width: 1200px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <li class="nav-item "><a class="nav-link "   href="#">Advice</a></li>
+                            <li class="nav-item "><a class="nav-link " href="#">Advice</a></li>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="fitness.html">Fitness</a>
@@ -46,79 +46,94 @@
                     <li class="nav-item"><a class="nav-link" href="success.html">Success</a></li>
                     <li class="nav-item"><a class="nav-link " href="shop.html">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="business.html">Business</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                    <li class="nav-item"><a  class="nav-link" href="signup.html">SIGN-UP</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">SIGN-UP</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <hr>
-    <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Back & Arm Remix</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/backArmsRemix.PNG" alt="Breadcrumb Trail thumbnail">
-                    <div class="media-body align-self-center">
-                        <h3>Target Areas: <span style="color: lightgrey;">Arms</span></h3>
-                        <h3>Equipment: <span style="color: lightgrey;">mat, dumbbells</span></h3>
-                        <p class="d-none d-sm-block">We are back at it — pun intended. Let's sculpt lines in the upper body to show off your best you.</p>
+
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                class="img-fluid" alt="Sample image">
+                </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form>
+                    <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                        <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-google"></i></a>
+                        <button>
                     </div>
+
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="form3Example3" class="form-control form-control-lg"
+                        placeholder="Enter a valid email address" />
+                        <label class="form-label" for="form3Example3">Email address</label>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-3">
+                        <input type="password" id="form3Example4" class="form-control form-control-lg"
+                        placeholder="Enter password" />
+                        <label class="form-label" for="form3Example4">Password</label>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Checkbox -->
+                        <div class="form-check mb-0">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                            <label class="form-check-label" for="form2Example3">
+                            Remember me
+                            </label>
+                        </div>
+                        <a href="#!" class="text-body">Forgot password?</a>
+                    </div>
+
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="button" class="btn btn-primary btn-lg"
+                            style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                                <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                                class="link-danger">Register</a>
+                                </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2 class="text-sm-right">Super Dumbbell Strength</h2>
+        <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+            <!-- Copyright -->
+            <div class="text-white mb-3 mb-md-0">
+                Copyright © 2020. All rights reserved.
             </div>
-            <div class="col">
-                <div class="media">
-                    <div class="media-body align-self-center">
-                        <h4>Target Areas: <span style="color: lightgrey;">Total Body</span></h4>
-                        <h4>Equipment: <span style="color: lightgrey;">mat, dumbbells</span></h4>
-                        <p class="d-none d-sm-block">Upper body. Lower body. Total body! Grab two dumbbells and power through strength training intervals with Gideon. While the pace may be slower, the sweat will still fall.</p>
-                    </div>
-                    <img class="d-flex mr-3 img-thumbnail" src="img/superDumbbellStrength.PNG" alt="Breadcrumb Trail thumbnail">
-                </div>
+            <!-- Copyright -->
+
+        <!-- Right -->
+            <div>
+                <a class="btn btn-social-icon btn-github" href="http://instagram.com/"><i class="fa fa-github"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-google"></i></a>
             </div>
+        <!-- Right -->
         </div>
-        <hr>
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Blazing Guns</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/blazingGuns.PNG" alt="Breadcrumb Trail thumbnail">
-                    <div class="media-body align-self-center">
-                        <h3>Target Areas: <span style="color: lightgrey;">Arms</span></h3>
-                        <h3>Equipment: <span style="color: lightgrey;">mat, dumbbells</span></h3>
-                        <p class="d-none d-sm-block">Your guns will be blazing in this completely arm-focused dumbbell workout. Ready, aim, fire.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2 class="text-sm-right">Upper Body Box & Burn</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <div class="media-body align-self-center">
-                        <h4>Target Areas: <span style="color: lightgrey;">Arms</span></h4>
-                        <h4>Equipment: <span style="color: lightgrey;">mat, dumbbells (optional)</span></h4>
-                        <p class="d-none d-sm-block">Mix up upper body strength exercises with fun and fast paced boxing cardio moves. You’ll switch from strength moves such as lateral raises into powerful boxing combos such as front punches to get your cardio kick. Get fit, strong, have fun and unleash your inner beast with this workout.</p>
-                    </div>
-                    <img class="d-flex mr-3 img-thumbnail" src="img/upperBodyAndBurn.PNG" alt="Breadcrumb Trail thumbnail">
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
+    </section>
 
     <footer class="site-footer">
         <div class="container">
@@ -126,7 +141,7 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="/shop.html">Shop</a></li>
                         <li><a href="/business.html">Business</a></li>
                         <li><a href="login.html">Login</a></li>
