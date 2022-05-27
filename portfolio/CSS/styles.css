@@ -204,6 +204,10 @@ hr {
     padding: 20px 0;
 }
 
+#login-footer {
+    min-height: 270px;
+}
+
 /* container imgs*/
 .col .media img {
     background: linear-gradient(270deg,#e03694 -24.77%,#f47253 95.41%);
@@ -283,3 +287,4 @@ height: calc(100% - 73px);
 height: 100%;
 }
 }
+
